@@ -1,12 +1,13 @@
 :root{
-    .color1 { #6d9788 };
-    .color2 { #1e2528 };
-    .color3 { #7e1c13 };
-    .color4 { #bf0a0d };
-    .color5 { #e6e1c2 };
+    
+    --fundo-menu-lateral: #012840;
+    --fundo-claro: #c8d4db;
+    --fundo-claro2: #2f3538;
 
+    --texto-claro: #161616;
+    --texto-escuro: #c8d4db;
 
-    --cor1: #012840;
-    --cor2: #037F8C;
-    --cor3: #38E0F2;
+    --texto-titulo-claro: #38E0F2;
+    --texto-titulo-escuro: #037F8C;
+
 }
