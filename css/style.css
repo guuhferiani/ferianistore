@@ -1,13 +1,46 @@
+/* variavel para as cores  */ 
 :root{
     
     --fundo-menu-lateral: #012840;
     --fundo-claro: #c8d4db;
     --fundo-claro2: #2f3538;
 
-    --texto-claro: #161616;
-    --texto-escuro: #c8d4db;
+    --texto-escuro: #161616;
+    --texto-claro: #c8d4db;
+    --texto-hover: #218591;
 
     --texto-titulo-claro: #38E0F2;
     --texto-titulo-escuro: #037F8C;
 
+}
+/* css geral  */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* color: #161616; */
+    color: var(--texto-escuro);
+    background: var(--fundo-claro);
+}
+a{
+    color: var(--texto-escuro);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--texto-hover);
+    text-decoration: none; /* retirar underline */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Times New Roman', Times, serif; 
+}
+/* cabeçalho */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 0; /**/
+    padding: 0 15px;
+    background: var(--fundo-menu-lateral);
+    overflow-y: auto;
 }
