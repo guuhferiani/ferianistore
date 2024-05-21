@@ -100,8 +100,6 @@ h1, h2, h3, h4, h5, h6 {
     height: 35px;
     box-shadow: 0px 0px 5px 0px var(--sombra-clara); /* sombra */
 }
-
-
 /* ajuste para o corpo principal */
 #main {
     margin-left: 300px;
@@ -111,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 30px;
     padding-right: 30px;
 }
-/* @media (max-width: 1199px) {
+@media (max-width: 1199px) {
     #header {
         left: -300px;
     }
@@ -123,7 +121,7 @@ h1, h2, h3, h4, h5, h6 {
         padding-left: 12px;
         padding-right: 12px;
     }
-} */
+}
 /** Menu Desktop **/
 .nav-menu {
     padding: 30px 0 0 0;
@@ -165,4 +163,29 @@ h1, h2, h3, h4, h5, h6 {
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
     color: var(--cor-detalhes);
+}
+/* Menu mobile */
+.mobile-nav-toggle {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    border: 0;
+    font-size: 26px;
+    transition: all 0.4s;
+    background: var(--cor-detalhes);
+    color: var(--texto-claro);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    cursor: pointer;
+}
+.mobile-nav-active {
+    overflow: hidden;
+}
+.mobile-nav-active #header {
+    left: 0;
 }
