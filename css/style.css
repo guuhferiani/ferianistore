@@ -189,3 +189,26 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active #header {
     left: 0;
 }
+
+/* hero */
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/fundo-hero.jpg") top center;
+    background-size: cover;
+}
+#hero::before {
+    content: "";
+    background: rgba(5, 13, 24, 0.555);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
