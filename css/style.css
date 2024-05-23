@@ -10,6 +10,7 @@
 
     --texto-escuro: #161616;
     --texto-claro: #c8d4db;
+    --texto-branco: #ecf8ff;
     --texto-hover: #218591;
     --texto-opaco: #81888c;
 
@@ -45,7 +46,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 320px;
+    width: 300px;
     transition: all ease-in-out 0.5s;
     z-index: 99; /**/
     padding: 0 15px;
@@ -211,4 +212,41 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2;
     min-width: 300px;
+}
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 120px;
+    font-weight: 700;
+    line-height: 120px;
+    color: var(--texto-branco);
+}
+#hero p {
+    font-size: 45px;
+}
+#hero p span {
+    color: var(--texto-branco);
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--cor-detalhes);
+}
+
+
+@media (max-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 75px;
+        line-height: 45px;
+        align-content: center;
+        justify-content: center;
+    }
+    #hero p {
+        padding-left: 50px;
+        font-size: 25px;
+        align-content: center;
+        justify-content: center;
+    }
 }
