@@ -3,7 +3,7 @@
     
     --fundo-menu-lateral: #012840;
     --fundo-claro: #c8d4db;
-    --fundo-claro2: #2f3538;
+    --fundo-escuro: #2f3538;
 
     --borda-clara: #38E0F2;
     --borda-escura: #037F8C;
@@ -27,7 +27,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     /* color: #161616; */
     color: var(--texto-claro);
-    background: var(--fundo-claro);
+    background: var(--fundo-escuro);
 }
 a{
     color: var(--texto-escuro);
@@ -133,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 .nav-menu>ul>li {
+    /* position: relative; */
     white-space: nowrap;
 }
 /*revisão*/
@@ -218,10 +219,11 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 120px;
     color: var(--texto-branco);
-    background: rgba(63, 63, 63, 0.185);
 }
 #hero p {
-    font-size: 45px;
+    font-size: 40px;
+    color: var(--texto-branco);
+    background: rgba(31, 31, 31, 0.5);
 }
 #hero p span {
     color: var(--texto-branco);
@@ -229,8 +231,6 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 1px;
     border-bottom: 3px solid var(--cor-detalhes);
 }
-
-
 @media (max-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -239,7 +239,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 768px) {
     #hero h1 {
         font-size: 75px;
-        line-height: 45px;
+        line-height: 55px;
     }
     #hero p {
         font-size: 25px;
