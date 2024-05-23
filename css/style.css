@@ -240,6 +240,8 @@ h1, h2, h3, h4, h5, h6 {
     #hero h1 {
         font-size: 75px;
         line-height: 90px;
+        padding-left:50px;
+        padding-right:50px;
     }
     #hero p {
         font-size: 25px;
