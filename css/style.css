@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 .nav-menu>ul>li {
-    position: relative;
+    position: ;
     white-space: nowrap;
 }
 /*revisão*/
@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 #hero .hero-container {
-    position: relative;
+    position: ;
     z-index: 2;
     min-width: 300px;
 }
