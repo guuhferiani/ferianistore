@@ -133,7 +133,6 @@ h1, h2, h3, h4, h5, h6 {
     list-style: none;
 }
 .nav-menu>ul>li {
-    position: ;
     white-space: nowrap;
 }
 /*revisão*/
@@ -209,7 +208,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1;
 }
 #hero .hero-container {
-    position: relative;
+    /* position: relative; */
     z-index: 2;
     min-width: 300px;
 }
@@ -219,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
     line-height: 120px;
     color: var(--texto-branco);
+    background: rgba(63, 63, 63, 0.185);
 }
 #hero p {
     font-size: 45px;
@@ -233,15 +233,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1024px) {
     #hero {
-        background-attachment: ;
+        background-attachment: fixed;
     }
 }
 @media (max-width: 768px) {
     #hero h1 {
         font-size: 75px;
-        line-height: 90px;
-        padding-left: 90px;
-        padding-right: 90px;
+        line-height: 45px;
     }
     #hero p {
         font-size: 25px;
