@@ -274,7 +274,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 25px;
     }
 }
-/** Seções Gerais ***/
+/** Seções Gerais === tag Section ***/
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -283,6 +283,9 @@ section {
 .section-bg {
     background: var(--fundo-escuro);
     color: var(--texto-claro);
+}
+.section-title{
+    padding-bottom: 30px;
 }
 .section-title h2 {
     font-size: 40px;
@@ -306,3 +309,60 @@ section {
     margin-bottom: 0;
 }
 /* Sobre */
+.sobre .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--cor-detalhes); 
+}
+.sobre .content ul {
+    list-style: none;
+    padding: 0;
+}
+.sobre .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.sobre .content ul strong {
+    margin-left: 10px;
+}
+.sobre .content ul i {
+    font-size: 20px;
+    color: var(--cor-detalhes);
+    margin-right: 10px;
+    line-height: 0;
+}
+/* Conquistas */
+.conquistas {
+    padding-bottom: 30px;
+}
+.conquistas .count-box{
+    padding: 30px;
+    width: 100%;
+}
+.conquistas .count-box i {
+    display: block;
+    font-size: 44px;
+    color: var(--cor-detalhes);
+    float: left;
+    line-height: 0;
+}
+.conquistas .count-box span {
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: var(--texto-escuro);
+    margin-left: 60px;
+}
+.conquistas .count-box p {
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Open", sans-serif;
+    color: var(--texto-escuro);
+}
+/* Opcional */
+.conquistas .count-box i:hover {
+    color: var(--texto-branco);
+    transition: 0.4s;
+}
