@@ -394,3 +394,42 @@ section {
     transition: 2s;
     background: var(--cor-detalhes);
 }
+/* Resumo */
+.resume .resume-title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid var(--cor-detalhes);
+    position: relative;
+}
+.resume .resume-item h4 {
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--texto-hover);
+    margin-bottom: 10px;
+}
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    background: var(--texto-claro);
+    border: 2px solid var(--cor-detalhes);
+}
