@@ -477,3 +477,41 @@ section {
     z-index: 2;
     opacity: 0;
 }
+.portfolio .portfolio-wrap .portfolio-links {
+    opacity: 1;
+    right: 0;
+    bottom: -60px;
+    left: 0;
+    z-index: 3;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    justify-content: center;
+}
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: var(--texto-escuro);
+    font-size: 28px;
+    text-align: center;
+    background: var(--texto-hover);
+    transition: 0.3s;
+    width: 50%;
+}
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    background: var(--fundo-escuro);
+}
+.portfolio .portfolio-wrap .portfolio-links a+a {
+    border-left: 1px solid var(--fundo-menu-lateral);
+}
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+}
+.portfolio .portfolio-wrap:hover .portfolio-links {
+    opacity: 1;
+    bottom: 0;
+}
+/* portfolio Detalhes */
+/*  ========  voltar  ========   */
