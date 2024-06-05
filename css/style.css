@@ -514,4 +514,37 @@ section {
     bottom: 0;
 }
 /* portfolio Detalhes */
+
+
 /*  ========  voltar  ========   */
+
+/* Serviços // Produtos  */
+
+.services .icon-box {
+    margin-bottom: 20px;
+}
+.services .icon {
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: var(--fundo-menu-lateral);
+    border-radius: 50%;
+    transition: 0.5s;
+    border: 2px solid var(--cor-detalhes);
+    box-shadow: 0 0 8px 2px black;
+}
+.services .icon i {
+    color: var(--texto-claro);
+    font-size: 24px;
+    line-height: 0;
+}
+.services .icon-box:hover .icon {
+    background: var(--fundo-claro);
+    transition: ease-in-out 0.3s;
+}
+.services .icon-box:hover .icon i {
+    color: var(--texto-escuro);
+}
