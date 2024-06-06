@@ -548,3 +548,15 @@ section {
 .services .icon-box:hover .icon i {
     color: var(--texto-escuro);
 }
+.services .title {
+    margin-left: 80px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--texto-branco);
+}
+.services .description {
+    margin-left: 80px;
+    line-height: 24px;
+    font-size: 18px;
+}
