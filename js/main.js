@@ -249,7 +249,7 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
   /**
    * Controle deslizante de depoimentos
    */
-  new Swiper('.testimonials-slider', {
+  new Swiper('.depoimentos-slider', {
     speed: 600,
     loop: true,
     autoplay: {
