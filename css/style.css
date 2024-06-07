@@ -560,3 +560,66 @@ section {
     line-height: 24px;
     font-size: 18px;
 }
+/* depoimentos / feedbacks  */
+.depoimentos, 
+.depoimentos .depoimentos-slider{
+    overflow: hidden;
+}
+.depoimentos .depoimento-item {
+    /* box-sizing: content-box; */
+    text-align: center;
+    min-height: 320px;
+}
+.depoimentos .depoimento-item .depoimento-img {
+    width: 90px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.depoimentos .depoimento-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0 5px 0;
+    color: var(--cor-detalhes);
+}
+.depoimentos .depoimento-item h4 {
+    font-size: 14px;
+    color: var(--texto-claro);
+    margin: 0;
+}
+.depoimentos .depoimento-item .quote-icon-left,
+.depoimentos .depoimento-item .quote-icon-right{
+    color: var(--cor-detalhes);
+    font-size: 26px;
+}
+.depoimentos .depoimento-item .quote-icon-left {
+    position: relative;
+    display: inline-block;
+    left: -5px;
+}
+.depoimentos .depoimento-item .quote-icon-right {
+    position: relative;
+    display: inline-block;
+    top: 10px;
+    right: -5px;
+}
+.depoimentos .depoimento-item p {
+    font-style: italic;
+    margin: 0 15px 35px 15px;
+    padding: 20px;
+    background: var(--fundo-claro);
+    position: relative;
+    color: var(--texto-escuro);
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+}
+.depoimentos .depoimento-item p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 20px);
+    border-top: 20px solid #fff;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+}
