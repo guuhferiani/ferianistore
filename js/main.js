@@ -1,7 +1,6 @@
 /**
 * Template Name: iPortfolio
 * Updated: Jul 27 2023 with Bootstrap v5.3.1
-* License: https://bootstrapmade.com/license/
 */
 (function() {
   "use strict";
