@@ -4,9 +4,10 @@
 */
 (function() {
   "use strict";
+  /*O modo estrito ("use strict") é ativado para ajudar a detectar erros e comportamentos problemáticos no código. */
 
   /**
-   * Função de seleção fácil
+   * Função de seleção
    */
   const select = (el, all = false) => {
     el = el.trim()
@@ -19,7 +20,7 @@
 
   /**
    * Easy event listener function 
-   * Função de ouvinte de eventos
+   * Função de Adição de Eventos (on)
    * Função espera que um evento ocorra e depois responde a ele
    * Função de ouvinte de eventos
    */
