@@ -295,7 +295,7 @@ h6 {
 
 .hero:before {
     content: "";
-    background: color-mix(in srgb, var(--background-color), transparent 70%);
+    background: var(--background-color);
     position: absolute;
     inset: 0;
     z-index: 2;
