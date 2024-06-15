@@ -21,9 +21,7 @@
   /**
    * Easy event listener function 
    * Função de Adição de Eventos (on)
-   * Função espera que um evento ocorra e depois responde a ele
-   * Função de ouvinte de eventos
-   */
+   * Função espera que um evento ocorra e depois responde a ele  */
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -232,7 +230,7 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
    * Portfolio
    * Controle deslizante de detalhes do portfólio
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.portfolio-detalhes', {
     speed: 400,
     loop: true,
     autoplay: {
