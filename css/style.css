@@ -308,8 +308,14 @@ h6 {
     letter-spacing: 1px;
     border-bottom: 3px solid var(--cor-detalhes);
 }
-
+/* efeito parallax */
 @media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 1024px) {
     #hero {
         background-attachment: fixed;
     }
@@ -318,7 +324,7 @@ h6 {
 @media (max-width: 768px) {
     #hero h2 {
         font-size: 90px;
-        line-height: 36px;
+        line-height: 75px;
         margin-bottom: 45px;
     }
 
