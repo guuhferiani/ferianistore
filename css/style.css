@@ -259,11 +259,13 @@ h6 {
 .mobile-nav-active #header {
     left: 0;
 }
+
 /* HERO */
 #hero {
     width: 100%;
     height: 100vh;
-    background: url("../img/fundo-hero2.jfif") bottom; /*inserir img no CSS*/
+    background: url("../img/fundo-hero2.jfif") bottom;
+    /*inserir img no CSS*/
     background-size: cover;
     position: relative;
 }
@@ -308,6 +310,7 @@ h6 {
     letter-spacing: 1px;
     border-bottom: 3px solid var(--cor-detalhes);
 }
+
 /* efeito parallax */
 @media (min-width: 1024px) {
     #hero {
@@ -525,7 +528,6 @@ section {
 .portfolio .portfolio-item {
     margin-bottom: 30px;
 }
-
 .portfolio #portfolio-filters {
     margin: 0 auto 35px auto;
     list-style: none;
@@ -611,44 +613,6 @@ section {
 .portfolio .portfolio-wrap:hover .portfolio-links {
     opacity: 1;
     bottom: 0;
-}
-
-/* portfolio Detalhes */
-.breadcrumbs {
-    padding: 20px 0;
-    background: var(--texto-opaco);
-}
-.breadcrumbs h2 {
-    font-size: 26px;
-    font-weight: 300;
-}
-.breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-}
-.breadcrumbs ol li {
-    padding-left: 10px;
-}
-.breadcrumbs ol li+li::before {
-    content: "/";
-    display: inline-block;
-    padding-right: 10px;
-    color: var(--texto-escuro);
-}
-@media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-        display: block !important;
-    }
-    .breadcrumbs ol {
-        display: block;
-    }
-    .breadcrumbs ol li {
-        display: inline-block;
-    }
 }
 
 /* Serviços // Produtos  */
@@ -936,4 +900,113 @@ section {
         width: auto;
         padding-right: 20px 15px;
     }
+}
+
+/* portfolio adicional // Pagina dos Produtos */
+.breadcrumbs {
+    padding: 20px 0;
+    background: var(--texto-opaco);
+}
+
+.breadcrumbs h2 {
+    font-size: 26px;
+    font-weight: 300;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+.breadcrumbs ol li {
+    padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+    content: "/";
+    display: inline-block;
+    padding-right: 10px;
+    color: var(--texto-escuro);
+}
+
+@media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+        display: block !important;
+    }
+
+    .breadcrumbs ol {
+        display: block;
+    }
+
+    .breadcrumbs ol li {
+        display: inline-block;
+    }
+}
+
+.portfolio-detalhes {
+    padding-top: 40px;
+}
+
+.portfolio-detalhes .detalhes-slider img {
+    width: 100%;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination {
+    margin-top: 20px;
+    position: relative;
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: var(--texto-opaco);
+    opacity: 1;
+    /* border: 1px solid black; */
+}
+
+.portfolio-detalhes .detalhes-slider .swiper-pagination .swiper-pagination-bullet-active {
+    background: var(--borda-escura);
+}
+
+.portfolio-detalhes .portfolio-info {
+    background: var(--fundo-claro);
+    padding: 30px;
+    box-shadow: 0 0 30px rgba(5, 15, 25, 0.5);
+}
+
+.portfolio-detalhes .portfolio-info h3 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7c7c7;
+    color: var(--fundo-menu-lateral);
+}
+
+.portfolio-detalhes .portfolio-info ul {
+    list-style: none;
+    padding: 0;
+    font-size: 15px;
+}
+
+.portfolio-detalhes .portfolio-info ul li+li {
+    margin-top: 10px;
+}
+
+.portfolio-detalhes .portfolio-description {
+    padding-top: 30px;
+}
+
+.portfolio-detalhes .portfolio-description h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--fundo-menu-lateral);
+}
+.portfolio-detalhes .portfolio-description p {
+    padding: 0;
 }
