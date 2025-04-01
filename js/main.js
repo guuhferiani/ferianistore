@@ -9,6 +9,7 @@
   /**
    * Função de seleção
    */
+  
   const select = (el, all = false) => {
     el = el.trim()
     if (all) {
@@ -22,6 +23,8 @@
    * Easy event listener function 
    * Função de Adição de Eventos (on)
    * Função espera que um evento ocorra e depois responde a ele  */
+  
+  
   const on = (type, el, listener, all = false) => {
     let selectEl = select(el, all)
     if (selectEl) {
@@ -88,21 +91,27 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
   window.addEventListener('load', navbarlinksActive)
   onscroll(document, navbarlinksActive)
 
+
+
   /**
    * Scrolls to an element with header offset
    */
-  const scrollto = (el) => {
+
+
+  /* const scrollto = (el) => {
     let elementPos = select(el).offsetTop
     window.scrollTo({
       top: elementPos,
       behavior: 'smooth'
     })
-  }
+  } */
 
   /**
    * Botão voltar ao topo
    */
-  let backtotop = select('.back-to-top')
+
+
+  /* let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
       if (window.scrollY > 100) {
@@ -113,21 +122,28 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
     }
     window.addEventListener('load', toggleBacktotop)
     onscroll(document, toggleBacktotop)
-  }
+  } */
 
+
+    
   /**
    * Alternar navegação móvel
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+
+
+
+ /*  on('click', '.mobile-nav-toggle', function(e) {
     select('body').classList.toggle('mobile-nav-active')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
-  })
+  }) */
 
   /**
    * Rolar com deslocamento em links com nome de classe .scrollto
    */
-  on('click', '.scrollto', function(e) {
+
+  
+  /* on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
 
@@ -140,24 +156,26 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
       }
       scrollto(this.hash)
     }
-  }, true)
+  }, true) */
 
   /**
    * Rolar com deslocamento no carregamento da página com links hash no URL
    */
-  window.addEventListener('load', () => {
+
+
+  /* window.addEventListener('load', () => {
     if (window.location.hash) {
       if (select(window.location.hash)) {
         scrollto(window.location.hash)
       }
     }
-  });
+  }); */
 
   /* 
   * Hero Efeito digitar 
   */
   
-  const typed = select('.typed')
+  /* const typed = select('.typed')
   if (typed) {
     let typed_strings = typed.getAttribute('data-typed-items')
     typed_strings = typed_strings.split(',')
@@ -168,12 +186,15 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
       backSpeed: 50,
       backDelay: 2000
     });
-  }
+  } */
 
   /**
    * Animação de habilidades
    */
-  let skilsContent = select('.skills-content');
+
+
+
+  /* let skilsContent = select('.skills-content');
   if (skilsContent) {
     new Waypoint({
       element: skilsContent,
@@ -185,14 +206,17 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
         });
       }
     })
-  }
+  } */
 
   /**
    * Biblioteca Isotope: é uma biblioteca JavaScript para layouts dinâmicos 
    * e filtragem de elementos
    * Porfolio isotope e filtro
    */
-  window.addEventListener('load', () => {
+
+
+  
+  /* window.addEventListener('load', () => {
     let portfolioContainer = select('.portfolio-container');
     if (portfolioContainer) {
       let portfolioIsotope = new Isotope(portfolioContainer, {
@@ -217,20 +241,24 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
       }, true);
     }
 
-  });
+  }); */
 
   /**
    * Iniciar portfolio lightbox 
    */
-  const portfolioLightbox = GLightbox({
+
+
+  /* const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });
+  }); */
 
   /**
    * Portfolio
    * Controle deslizante de detalhes do portfólio
    */
-  new Swiper('.detalhes-slider', {
+  
+  
+  /* new Swiper('.detalhes-slider', {
     speed: 400,
     loop: true,
     autoplay: {
@@ -242,12 +270,14 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
       type: 'bullets',
       clickable: true
     }
-  });
+  }); */
 
   /**
    * Controle deslizante de depoimentos
    */
-  new Swiper('.depoimentos-slider', {
+
+
+  /* new Swiper('.depoimentos-slider', {
     speed: 600,
     loop: true,
     autoplay: {
@@ -271,24 +301,29 @@ selectEl.addEventListener(type, listener): Se all for falso, adiciona o ouvinte 
         spaceBetween: 20
       }
     }
-  });
+  }); */
 
   /**
    * Animação na rolagem
    *  on scroll
    */
-  window.addEventListener('load', () => {
+
+
+  /* window.addEventListener('load', () => {
     AOS.init({
       duration: 1000,
       easing: 'ease-in-out',
       once: true,
       mirror: false
     })
-  });
+  }); */
+
 
   /**
    * Iniciar contador
    */
-  new PureCounter();
+
+
+  /* new PureCounter(); */
 
 })()
